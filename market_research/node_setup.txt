@@ -1,0 +1,14 @@
+1 $ sudo apt-get update
+2 # Install a special package
+3 $ sudo apt-get install -y python-software-properties python g++ make
+4 # Add a new repository for apt-get to search
+5 $ sudo add-apt-repository ppa:chris-lea/node.js
+6 # Update apt-get’s knowledge of which packages are where
+7 $ sudo apt-get update
+8 # Now install nodejs and npm
+9 $ sudo apt-get install -y nodejs
+
+1 $ npm --version
+2 1.2.32
+3 $ node --version
+4 v0.10.12
