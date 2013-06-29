@@ -1,0 +1,6 @@
+1 # Commands for Cygwin on Windows
+2 $ cd ~
+3 $ cp /cygdrive/c/Users/JohnSmith/Downloads/cs184-john-stanford-edu.pem .
+4 $ chgrp Users cs184-john-stanford-edu
+5 $ chmod 400 cs184-john-stanford-edu.pem
+6 $ ssh -i cs184-john-stanford-edu.pem ubuntu@ec2-50-19-140-229.compute-1.amazonaws.com

@@ -1,0 +1,17 @@
+1 # Execute these commands on your EC2 instance.
+2 # Note that -qO- is not -q0-. O is the English letter, 0 is the number zero.
+3
+4 # 1) Install heroku and git
+5 $ sudo apt-get install -y git-core
+6 $ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+7 $ which git
+8 $ which heroku
+9 # 2) Login and set up your SSH keys
+10 $ heroku login
+11 $ ssh-keygen -t rsa
+12 $ heroku keys:add
+13 # 3) Clone a sample repo and push to heroku
+14 $ git clone https://github.com/heroku/node-js-sample.git
+15 $ cd node-js-sample
+16 $ heroku create
+17 $ git push heroku master
